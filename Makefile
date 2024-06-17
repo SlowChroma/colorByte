@@ -1,3 +1,2 @@
 default:
-	gcc main.c -lraylib -ocolorByte.bin
-	./colorByte.bin
+	gcc src/main.c -lraylib -ocolorByte.bin
