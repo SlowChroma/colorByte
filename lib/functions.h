@@ -1,3 +1,5 @@
+#include<unistd.h>
+
 int * byte_to_rgba(char input[])
 {
   static int result[4] = {0, 0, 0, 0};
@@ -12,4 +14,11 @@ int * byte_to_rgba(char input[])
   if(input[7] == '1') result[3] += 85;
   
   return result;
+}
+
+void restart_program() {
+    char *program_name = "./colorByte.bin";
+    char *argv[] = {program_name, NULL};
+
+    execv(program_name, argv);
 }
