@@ -60,7 +60,7 @@ int main()
     BeginDrawing();
 
     ClearBackground(BLACK);
-    DrawText("colorByte v2.0.0", 400, 180, 10, WHITE);
+    DrawText("colorByte v1.1.1", 400, 180, 10, WHITE);
 
     DrawRectangleRec(textBox, LIGHTGRAY);
 
@@ -123,7 +123,7 @@ int main()
     {
       BeginDrawing();
 
-      ClearBackground(DARKGRAY);
+      ClearBackground(LIGHTGRAY);
       DrawTexture(background, 0, 0, WHITE);
       DrawRectangleLines(0, 500, 500, 100, RED);
       DrawText("R TO RESTART\n\nESC TO QUIT", 25, 525, 30, BLACK);
